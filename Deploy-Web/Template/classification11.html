@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Musical Notes Classification | Lukman Ahromi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1nsYF_qAioCtAbGp2c_oXoajDAHtCEzny">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <div class="nav">
+            <div class="container-fluid px-5" >
+                    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                            <div class="container-fluid px-5">
+                                <a class="navbar-brand text-light" href="#">
+                                    <img src="https://drive.google.com/uc?export=view&id=1b42xey1BdfsDVRx0Q3wC1M2Eq16A7WRj" alt="" width="30" height="24" class="d-inline-block align-text-top"> Lukman Ahromi
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class="text-light nav-link active" aria-current="page" href="/">Home</a>
+                                        <a class="text-light nav-link" href="/#about">About</a>
+                                        <a class="text-light nav-link" href="/#instruction">Instruction</a>
+                                        <a class="text-light nav-link" href="/#classification">Classification</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </nav>
+            </div>
+        </div>
+
+
+        <div id="classification" class="classification">   
+                <div class="container m-5">    
+                    <div class="row">
+                        <div class="col-sm-5" data-aos="flip-right" data-aos-duration="2000">
+                            <div class="container-fluid p-4 classification-content">
+                                <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">  
+                                    <div class="form-group">
+                                        <h3 for="pwd" >The Classification</h3>
+                                        <div class=" my-2">          
+                                            <input type="file" class="form-control " placeholder="Hours Studied"  onchange="loadFile(event)"  name="my_image" id="pwd">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="form-group">        
+                                                <button type="submit" class="button btn">Generate</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="form-group">
+                                                <p class=""><img id="output" width="248" height="248"></p>
+                                            </div>
+                                        </div>
+                                    </div>       
+                                </form>
+
+                            </div>                  
+                        </div>               
+                        <div class="col-sm-7 " data-aos="fade-up" data-aos-duration="2000">
+                            {% if prediction %}
+                                <h2> Your Prediction   :  Not {{prediction}} </h2>
+                                <audio controls="controls">
+                                    <source src={{suara}}>
+                                </audio>
+                            {% endif %}      
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/4db91635b0.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    var loadFile = function(event) {
+        var my_image = document.getElementById('output');
+        my_image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    AOS.init();
+</script>
+
+</body>

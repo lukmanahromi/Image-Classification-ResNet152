@@ -1,0 +1,170 @@
+*{
+    margin: 0 !important;
+
+  }
+
+ 
+
+.jumbotron{
+    background-color: #081730 !important;
+    color: white;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin: 0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+ 
+}
+
+.jumbotron-content{
+    padding: 90px 0 90px 50px;
+}
+
+.about{
+    position: relative;
+    top: 560px;
+    left: 0px;
+    z-index: 4;
+    background-color: #020917;
+    height: 100vh;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 260px 150px;
+
+}
+
+.about h3{
+    padding-bottom: 10px;
+}
+
+.about p{
+    opacity: 50%;
+    font-style: italic;
+    font-size: 22px;
+    padding-top: 10px
+}
+
+.instruction{
+    background-color: #081730;
+    color: white;
+    height: 100vh;
+    position: relative;
+    top: 470px;
+    left: 0px;
+    z-index: 3;
+    padding-top: 150px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+
+
+.cardstyle{
+    background-color: #020917;
+    text-align: center;
+    padding: 50px 70px;
+    border-radius: 10px;
+    margin-top: 50px !important;
+}
+
+.cardstyle img{
+    background-color: #081730;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cardstyle p{
+    opacity: 50%;
+}
+
+
+.classification{
+    position: relative;
+    top: 380px;
+    left: 0;
+    z-index: 2;
+    background-color: #020917;
+    color: white;
+    padding-top: 120px;
+    height: 100vh;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+.classification h3{
+    text-align: center;
+    margin-bottom: 30px !important;
+}
+
+.classification .button{
+    margin-left: -11px !important
+}
+.classification p{
+    margin-top: 10px !important;
+    text-align: center;
+}
+
+.button{
+    background-color: #D62828;
+    color: white;
+    margin-top: 10px !important;
+}
+
+.button a{
+    text-transform: none;
+}
+
+.button:hover{
+    background-color: #C70909;
+    color: white;
+}
+
+
+
+.footer{
+    position: relative;
+    top: 290px;
+    left: 0;
+    z-index: 1;
+    background-color: #081730;
+    color: white;
+    padding-top: 150px;
+    height: 60vh;
+}
+.social{
+    text-align: center;
+}
+
+
+.footer p{
+    font-size: 28px;
+}
+
+nav a:hover, .footer a:hover{
+    color: #D62828 !important;
+}
+
+footer{
+    position: relative;
+    top: 40vh;
+    left: 0;
+    z-index: 1;
+    background-color: #081730;
+    border-top: 1px solid #232A4E; 
+    height: 50px;
+    padding-top: 10px
+}
+
+footer .tengah{
+    text-align: center;
+}
+
+footer .kanan{
+    text-align: end;
+}

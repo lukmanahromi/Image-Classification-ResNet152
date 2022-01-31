@@ -1,0 +1,65 @@
+*{
+    margin: 0 !important;
+
+  }
+
+.content{
+    background-color: #081730;
+    color: white;
+    height: 100vh;
+}
+.nav{
+    margin: 0;
+    padding-top: 24px;
+}
+
+
+.classification{
+    padding-top: 50px;
+
+}
+.classification h3{
+    text-align: center;
+    margin-bottom: 30px !important;
+}
+
+.classification .button{
+    margin-left: -11px !important
+}
+.classification p{
+    margin-top: 10px !important;
+    text-align: center;
+}
+
+.classification-content{
+    background-color: #020917 !important;
+    border-radius: 10px; 
+}
+
+.social{
+    text-align: center;
+}
+
+.button{
+    background-color: #D62828;
+    color: white;
+    margin-top: 10px !important;
+}
+
+.button a{
+    text-transform: none;
+}
+
+.button:hover{
+    background-color: #C70909;
+    color: white;
+}
+
+
+nav a:hover{
+    color: #D62828 !important;
+}
+
+.audio{
+    width: 100%;
+}
